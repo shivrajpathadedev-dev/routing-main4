@@ -6,48 +6,62 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
-productsArr:Array<Iproduct>= [
+productsArr: Array<Iproduct> = [
   {
-    pname: 'Dell Inspiron Laptop',
-    pid: '201',
+    pname: 'Samsung Galaxy S25',
+    pid: '301',
+    pstatus: 'Delivered',
+    canReturn: 1,
+    pimg: 'https://picsum.photos/id/1/300/200'
+  },
+  {
+    pname: 'Sony WH-1000XM5 Headphones',
+    pid: '302',
     pstatus: 'In-Progress',
     canReturn: 1,
-    pimg: 'https://picsum.photos/id/180/300/200'
+    pimg: 'https://picsum.photos/id/29/300/200'
   },
   {
-    pname: 'HP Laser Printer',
-    pid: '202',
-    pstatus: 'Delivered',
-    canReturn: 0,
-    pimg: 'https://picsum.photos/id/250/300/200'
-  },
-  {
-    pname: 'Boat Rockerz 550',
-    pid: '203',
+    pname: 'LG Smart LED TV',
+    pid: '303',
     pstatus: 'Dispatched',
-    canReturn: 1,
-    pimg: 'https://picsum.photos/id/20/300/200'
+    canReturn: 0,
+    pimg: 'https://picsum.photos/id/42/300/200'
   },
   {
-    pname: 'Apple iPad Air',
-    pid: '204',
+    pname: 'Acer Aspire 7 Laptop',
+    pid: '304',
+    pstatus: 'Delivered',
+    canReturn: 1,
+    pimg: 'https://picsum.photos/id/48/300/200'
+  },
+  {
+    pname: 'Mi Smart Band 9',
+    pid: '305',
     pstatus: 'In-Progress',
     canReturn: 1,
-    pimg: 'https://picsum.photos/id/30/300/200'
+    pimg: 'https://picsum.photos/id/64/300/200'
   },
   {
-    pname: 'Canon EOS Camera',
-    pid: '205',
-    pstatus: 'Delivered',
-    canReturn: 0,
-    pimg: 'https://picsum.photos/id/96/300/200'
-  },
-  {
-    pname: 'JBL Bluetooth Speaker',
-    pid: '206',
+    pname: 'Logitech MX Master 3S Mouse',
+    pid: '306',
     pstatus: 'Dispatched',
+    canReturn: 0,
+    pimg: 'https://picsum.photos/id/106/300/200'
+  },
+  {
+    pname: 'Amazon Kindle Paperwhite',
+    pid: '307',
+    pstatus: 'Delivered',
     canReturn: 1,
-    pimg: 'https://picsum.photos/id/1080/300/200'
+    pimg: 'https://picsum.photos/id/119/300/200'
+  },
+  {
+    pname: 'OnePlus Pad 2',
+    pid: '308',
+    pstatus: 'In-Progress',
+    canReturn: 1,
+    pimg: 'https://picsum.photos/id/160/300/200'
   }
 ];
   constructor() { }
